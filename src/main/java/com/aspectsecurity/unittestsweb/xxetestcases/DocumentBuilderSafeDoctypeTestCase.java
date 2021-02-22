@@ -26,7 +26,7 @@ public class DocumentBuilderSafeDoctypeTestCase extends XXETestCase {
         // parsing the XML
         try {
             DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
-            docBuilderFactory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);		// safe!
+          //  docBuilderFactory.setFeature("http://apache.org/xml/features/disallow-doctype-decl;", true);		// safe!
             DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
             Document doc = docBuilder.parse(new ByteArrayInputStream(request.getParameter("payload").getBytes()));
 
